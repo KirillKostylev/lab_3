@@ -14,8 +14,5 @@ public class Main {
         OutputData.outputData("\tHours: " + calc.calculateLifeInHours(day, month, year));
         OutputData.outputData("\tMinutes: " + calc.calculateLifeInMinut(day, month, year));
         OutputData.outputData("\tSeconds: " + calc.calculateLifeInSecond(day, month, year));
-
-
-
     }
 }
