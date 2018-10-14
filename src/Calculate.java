@@ -1,6 +1,7 @@
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
+
 public class Calculate {
     GregorianCalendar calendar = new GregorianCalendar();
     private int d = calendar.get(Calendar.DAY_OF_MONTH);
@@ -12,7 +13,7 @@ public class Calculate {
         return todayInSec - (year * 365 + month * 30 + day) * 24 * 60 * 60;
     }
 
-    public int calculateLifeInMinut(int day, int month, int year) {
+    public int calculateLifeInMinutes(int day, int month, int year) {
         int todayInMin = (y * 365 + m * 30 + d) * 24 * 60;
         return todayInMin - (year * 365 + month * 30 + day) * 24 * 60;
     }
@@ -34,11 +35,12 @@ public class Calculate {
 
     public int calculateLifeInMonth(int day, int month, int year) {
         int todayInMonth = y * 12 + m;
-        return todayInMonth - (year * 12 + m);
+        return todayInMonth - (year * 12 + month);
     }
 
     public int calculateLifeInYear(int day, int month, int year) {
-        int todayInYears = y;
-        return todayInYears - (year * 12 + m) / 12;
+        double todayInYears = (double)(y * 12 + m)/12;
+        double res =  todayInYears - (double)(year * 12 + month) / 12;
+        return (int)res;
     }
 }

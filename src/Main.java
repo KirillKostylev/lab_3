@@ -12,7 +12,7 @@ public class Main {
         OutputData.outputData("\tWeeks: " + calc.calculateLifeInWeeks(day, month, year));
         OutputData.outputData("\tDays: " + calc.calculateLifeInDays(day, month, year));
         OutputData.outputData("\tHours: " + calc.calculateLifeInHours(day, month, year));
-        OutputData.outputData("\tMinutes: " + calc.calculateLifeInMinut(day, month, year));
+        OutputData.outputData("\tMinutes: " + calc.calculateLifeInMinutes(day, month, year));
         OutputData.outputData("\tSeconds: " + calc.calculateLifeInSecond(day, month, year));
     }
 }
